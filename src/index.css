@@ -25,7 +25,7 @@ body {
 }
 
 .footer {
-  width: 450px;
+  width: 29vw;
   text-align: center;
   display: block;
   margin: 15px auto 30px auto;
@@ -42,28 +42,24 @@ body {
 #quote-box {
   border-radius: 3px;
   position: relative;
-  width: 450px;
+  width: 29vw;
   padding: 40px 50px;
+  margin-top: 3vh;
   display: table;
   background-color: #fff;
 }
 
 .quote-text {
   text-align: center;
-  width: 450px;
+  width: 29vw;
   height: auto;
   clear: both;
   font-weight: 500;
   font-size: 1.75em;
 }
 
-.quote-text i {
-  font-size: 1em;
-  margin-right: 0.4em;
-}
-
 .quote-author {
-  width: 450px;
+  width: 29vw;
   height: auto;
   clear: both;
   padding-top: 20px;
@@ -72,14 +68,14 @@ body {
 }
 
 .buttons {
-  width: 450px;
+  width: 29vw;
   margin: auto;
   display: block;
   overflow: hidden;
 }
 
 .button {
-  height: 38px;
+  height: 5.5vh;
   border: none;
   border-radius: 3px;
   color: #fff;
@@ -107,4 +103,29 @@ body {
 
 #new-quote {
   float: right;
+}
+
+@media screen and (max-width: 600px) {
+  #quote-box {
+    width: 40vw;
+  }
+  .buttons {
+    width: 40vw;
+  }
+  .quote-text {
+    width: 40vw;
+    height: auto;
+    clear: both;
+    font-weight: 500;
+    font-size: 1.4em;
+  }
+
+  .quote-author {
+    width: 40vw;
+    font-size: 1em;
+  }
+
+  .footer {
+    width: 40vw;
+  }
 }
