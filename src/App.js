@@ -20,6 +20,7 @@ function App() {
 
   useEffect(() => {
     fetchData();
+    randomColor();
   }, [random]);
 
   const randomColor = () => {
@@ -74,7 +75,6 @@ function App() {
             id="new-quote"
             onClick={() => {
               setRandom(!random);
-              randomColor();
             }}
             ref={btnColor}
           >
